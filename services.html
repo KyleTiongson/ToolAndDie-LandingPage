@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ICON.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Our Service Section</title>
+
+    <link rel="stylesheet" href="#servicesCSS">
+</head>
+
+<body>
+    <div class="container">
+        <div class="service-wrapper">
+            <div class="service">
+                <h1>Our Service<span></span></h1>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-solid fa-camera"></i>
+                        <h2><b>STAMPED ASSEMBLIES</b></h2>
+                        
+                        <p>When it comes to manufacturing a high-level stamping assembly, a tier manufacturer or Original Equipment Manufacturer will need to find a stamping supplier whom can streamline stamped metal assemblies in a single facility and save time. By optimizing your sourcing process for stamped parts, we provide you with a finished and assembled part.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-wrench"></i>
+                        <h2><b>METAL BRACKETS</b></h2>
+                        <p>Brackets, also known as hangers, play a pivotal role in a variety of applications, from buildings and automotive vehicles to electronics and appliances. They serve a variety of purposes, such as supporting loads, providing uplift, protecting against stress, securing parts and tying structural elements together.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-hammer"></i>
+                        <h2><b>STAMPED BUSBARS</b></h2>
+                        <p>Busbars distribute electricity with greater ease and flexibility than some other more permanent forms of installation and distribution. Also called bus bars or buss bars, they are often metallic strips of copper, brass, or aluminum that both ground and conduct electricity.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h2><b>STAMPED LEAD FRAMES</b></h2>
+                        <p>A lead frame is a thin metal plate to which semiconductors are attached during the device assembly process. Also called a leadframe, metal component connects the wiring from tiny electrical terminals on the semiconductor surface to the large-scale circuitry on automotive applications, electrical devices and circuit boards.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-tools"></i>
+                        <h2><b>STAMPED SHIELDS</b></h2>
+                        <p>EMI shielding components, also known as enclosures or housings, are designed to isolate electrical devices from their surroundings and minimize disruption from outside electromagnetic interruption.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-gear"></i>
+                        <h2><b>STAMPED TERMINALS</b></h2>
+                        <p>Terminals are necessary to connect various circuits or systems. Sometimes called electrical connectors, these components are used to transfer electrical current from a power or grounding source to an electrical system.In modern devices, almost all internal systems are controlled by an array of electrical terminals and connectors.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-hard-hat"></i>
+                        <h2><b>WIRE & CABLE CONNECTORS</b></h2>
+                        <p>Wire and cable connectors, also known as crimp terminals, crimp cable connectors and eyelet terminals serve a simple but essential purpose of connecting electrical wires and cables to other parts and modules within the entire electrical system of vehicles, appliances, control systems and other electrical applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style id="servicesCSS">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            min-height: 100vh;
+            width: 100%;
+            background-color: #493304;
+        }
+
+        .service-wrapper {
+            padding: 5% 8%;
+        }
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: transparent;
+            letter-spacing: 4px;
+            background-color: #493304;
+            background: linear-gradient(8deg, rgb(207, 145, 11) 0%, rgb(207, 145, 11) 41%, rgb(207, 145, 11) 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+
+        h1::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 10%;
+            height: 8px;
+            width: 80%;
+            border-radius: 50%;
+            background-color: rgba(red, green, blue, 0.05);
+
+        }
+
+        h1 span {
+            position: absolute;
+            top: 100%;
+            left: 10%;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: #aa7709;
+            animation: anim 3s linear infinite;
+        }
+
+        h2{
+            color:#aa7709;
+        }
+
+        @keyframes anim {
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                left: 88%;
+            }
+        }
+
+        .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    margin-top: 80px;
+}
+
+        .card {
+            height: 350px;
+            width: 370px;
+            background-color: #aa7709;
+            padding: 3% 8%;
+            border: 0.2px solid #493304;
+            border-radius: 8px;
+            transition: .6s;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::after {
+            content: "";
+            position: absolute;
+            top: 150%;
+            left: -200px;
+            width: 120%;
+            transform: rotate(50deg);
+            background-color: white;
+            height: 18px;
+            filter: blur(30px);
+            opacity: 0.5;
+            transition: 1s;
+        }
+
+        .card:hover:after {
+            width: 225%;
+            top: -100%;
+        }
+
+        .card i {
+            color: #493304;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 4.8rem;
+        }
+
+        .card h2 {
+            color: #493304;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            text-align: center;
+            font-size: 14.5px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            margin: 12px 0;
+            color: #493304;
+        }
+
+        .card:nth-child(1) {
+            background-image: url('assemble.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card:nth-child(2) {
+            background-image: url('metalbracket.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card:nth-child(3) {
+            background-image: url('busbars.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card:nth-child(4) {
+            background-image: url('leadframes.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card:nth-child(5) {
+            background-image: url('shield.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card:nth-child(6) {
+            background-image: url('terminal.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card:nth-child(7) {
+            background-image: url('wire&cable.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+    </style>
+</body>
